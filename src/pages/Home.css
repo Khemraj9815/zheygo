@@ -79,9 +79,9 @@
   color: #1a1a1a;
 }
 
-.promotions-grid {
+.promo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
@@ -215,6 +215,155 @@
 .reviews {
   color: #999;
   font-size: 0.85rem;
+}
+
+.restaurant-card .delivery-time {
+  padding: 0 20px 10px;
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.restaurant-card .order-btn {
+  width: calc(100% - 40px);
+  margin: 10px 20px 20px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.restaurant-card .order-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 60px 50px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.steps-container .step {
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 2px solid rgba(255, 193, 7, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.steps-container .step:hover {
+  border-color: #FFC107;
+  background: rgba(255, 193, 7, 0.1);
+  transform: translateY(-5px);
+}
+
+.steps-container .step-number {
+  width: 50px;
+  height: 50px;
+  background-color: #FFC107;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.steps-container .step-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.steps-container .step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.steps-container .step p {
+  opacity: 0.8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.how-it-works .btn {
+  margin-top: 20px;
+}
+
+/* CTA Section - Ready to Order */
+.cta-section {
+  background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
+  color: white;
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 15px 30px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.cta-buttons .btn:hover {
+  background-color: white;
+  color: #FFC107;
+  transform: translateY(-2px);
 }
 
 /* How It Works Preview */
@@ -434,6 +583,8 @@
   .promotions,
   .featured-restaurants,
   .how-it-works-preview,
+  .how-it-works,
+  .cta-section,
   .features {
     padding: 40px 20px;
   }
@@ -441,6 +592,8 @@
   .promotions h2,
   .section-header h2,
   .how-it-works-preview h2,
+  .how-it-works h2,
+  .cta-section h2,
   .features h2 {
     font-size: 1.8rem;
   }
@@ -464,8 +617,9 @@
   }
 
   .restaurants-grid,
-  .promotions-grid,
-  .features-grid {
+  .promo-grid,
+  .features-grid,
+  .steps-container {
     grid-template-columns: 1fr;
   }
 
