@@ -2,9 +2,8 @@
   width: 100%;
 }
 
-/* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+  background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
   color: white;
   padding: 80px 50px;
   text-align: center;
@@ -20,7 +19,6 @@
   opacity: 0.95;
 }
 
-/* Contact Info Section */
 .contact-info-section {
   padding: 60px 50px;
   background-color: #f8f8f8;
@@ -50,7 +48,7 @@
 
 .card-icon {
   font-size: 2.5rem;
-  color: #d32f2f;
+  color: #FFC107;
   margin-bottom: 15px;
 }
 
@@ -72,7 +70,6 @@
   font-size: 0.9rem;
 }
 
-/* Contact Form Section */
 .contact-form-section {
   padding: 60px 50px;
   max-width: 1200px;
@@ -81,13 +78,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 50px;
   width: 100%;
-}
-
-.form-container h2,
-.map-container h2 {
-  font-size: 2rem;
-  color: #1a1a1a;
-  margin-bottom: 30px;
 }
 
 .contact-form {
@@ -99,12 +89,6 @@
 
 .form-group {
   margin-bottom: 20px;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
 }
 
 .contact-form label {
@@ -128,33 +112,28 @@
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #d32f2f;
-  box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
+  border-color: #FFC107;
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.1);
 }
 
 .submit-btn {
   width: 100%;
   padding: 12px 20px;
-  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+  background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
   color: white;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
   transition: all 0.3s ease;
 }
 
 .submit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(211, 47, 47, 0.3);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.3);
 }
 
-/* Map Container */
 .map-container {
   display: flex;
   flex-direction: column;
@@ -165,7 +144,6 @@
   border-radius: 12px;
   padding: 60px 20px;
   text-align: center;
-  margin-bottom: 30px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -198,7 +176,7 @@
 }
 
 .map-details h4 {
-  color: #d32f2f;
+  color: #FFC107;
   margin-bottom: 10px;
   font-size: 1.1rem;
 }
@@ -209,7 +187,6 @@
   line-height: 1.6;
 }
 
-/* FAQ Section */
 .faq-section {
   background-color: #f8f8f8;
   padding: 60px 50px;
@@ -231,17 +208,11 @@
 }
 
 .faq-category h3 {
-  color: #d32f2f;
+  color: #FFC107;
   font-size: 1.3rem;
   margin-bottom: 20px;
-  border-bottom: 3px solid #d32f2f;
+  border-bottom: 3px solid #FFC107;
   padding-bottom: 10px;
-}
-
-.faq-items {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
 .faq-item details {
@@ -250,6 +221,7 @@
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .faq-item summary {
@@ -261,11 +233,7 @@
 }
 
 .faq-item summary:hover {
-  color: #d32f2f;
-}
-
-.faq-item details[open] summary {
-  margin-bottom: 10px;
+  color: #FFC107;
 }
 
 .faq-item p {
@@ -276,7 +244,6 @@
   border-top: 1px solid #eee;
 }
 
-/* Support Options */
 .support-options {
   padding: 60px 50px;
   max-width: 1200px;
@@ -330,7 +297,7 @@
 }
 
 .support-link {
-  color: #d32f2f;
+  color: #FFC107;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -341,9 +308,8 @@
   margin-right: -5px;
 }
 
-/* Newsletter */
 .newsletter {
-  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+  background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
   color: white;
   padding: 60px 50px;
   text-align: center;
@@ -379,7 +345,7 @@
 .newsletter-form button {
   padding: 12px 30px;
   background: white;
-  color: #d32f2f;
+  color: #FFC107;
   border: none;
   border-radius: 6px;
   font-weight: bold;
@@ -392,7 +358,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .hero {
     padding: 40px 20px;
@@ -402,34 +367,14 @@
     font-size: 2rem;
   }
 
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .contact-info-section,
-  .support-options,
-  .faq-section {
-    padding: 40px 20px;
-  }
-
-  .contact-info-section h2,
-  .support-options h2,
-  .faq-section h2 {
-    font-size: 1.8rem;
-  }
-
-  .contact-cards,
-  .support-grid {
-    grid-template-columns: 1fr;
-  }
-
   .contact-form-section {
     grid-template-columns: 1fr;
     padding: 40px 20px;
     gap: 30px;
   }
 
-  .form-row {
+  .contact-cards,
+  .support-grid {
     grid-template-columns: 1fr;
   }
 

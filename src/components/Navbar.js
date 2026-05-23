@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from '../logo.png';
 import './Navbar.css';
 
 function Navbar() {
@@ -12,8 +13,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <span className="navbar-icon">🍽️</span>
-          ZheyGo
+          <img src={logo} alt="ZheyGo Logo" className="navbar-logo-img" />
+          <span className="navbar-text">ZheyGo</span>
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           {click ? <FaTimes /> : <FaBars />}

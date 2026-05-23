@@ -2,9 +2,8 @@
   width: 100%;
 }
 
-/* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+  background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
   color: white;
   padding: 80px 50px;
   text-align: center;
@@ -20,7 +19,6 @@
   opacity: 0.95;
 }
 
-/* Download Main Section */
 .download-main {
   padding: 80px 50px;
   max-width: 1200px;
@@ -70,44 +68,6 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.download-btn.ios {
-  background: #555;
-}
-
-.download-btn.ios:hover {
-  background: #333;
-}
-
-.download-btn.android {
-  background: #3ddc84;
-  color: #1a1a1a;
-}
-
-.download-btn.android:hover {
-  background: #2bb870;
-  color: #1a1a1a;
-}
-
-.btn-icon {
-  font-size: 1.8rem;
-}
-
-.btn-text {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.btn-label {
-  font-size: 0.8rem;
-  opacity: 0.9;
-}
-
-.btn-store {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 .app-mockup {
   display: flex;
   justify-content: center;
@@ -115,7 +75,6 @@
   font-size: 10rem;
 }
 
-/* App Features Section */
 .app-features-section {
   background-color: #f8f8f8;
   padding: 60px 50px;
@@ -153,7 +112,7 @@
 }
 
 .check-icon {
-  color: #d32f2f;
+  color: #FFC107;
   font-size: 1.5rem;
   flex-shrink: 0;
 }
@@ -163,7 +122,6 @@
   font-weight: 500;
 }
 
-/* Requirements Section */
 .requirements {
   padding: 60px 50px;
   max-width: 1200px;
@@ -195,7 +153,7 @@
 }
 
 .requirement-card:hover {
-  border-color: #d32f2f;
+  border-color: #FFC107;
   transform: translateY(-5px);
 }
 
@@ -205,7 +163,7 @@
 }
 
 .requirement-card h3 {
-  color: #d32f2f;
+  color: #FFC107;
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
@@ -217,102 +175,8 @@
   line-height: 1.6;
 }
 
-/* Screenshots Section */
-.screenshots {
-  background-color: #f8f8f8;
-  padding: 60px 50px;
-}
-
-.screenshots h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  color: #1a1a1a;
-  margin-bottom: 50px;
-}
-
-.screenshots-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.screenshot-card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.screenshot-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.screenshot-icon {
-  font-size: 3rem;
-  display: block;
-  margin-bottom: 15px;
-}
-
-.screenshot-card h3 {
-  color: #1a1a1a;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.screenshot-card p {
-  color: #666;
-  line-height: 1.6;
-}
-
-/* FAQ Section */
-.faq {
-  padding: 60px 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.faq h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  color: #1a1a1a;
-  margin-bottom: 50px;
-}
-
-.faq-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-}
-
-.faq-card {
-  background: white;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #d32f2f;
-}
-
-.faq-card h3 {
-  color: #d32f2f;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.faq-card p {
-  color: #666;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-/* CTA Final Section */
 .cta-final {
-  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+  background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
   color: white;
   padding: 80px 50px;
   text-align: center;
@@ -343,7 +207,7 @@
   gap: 10px;
   padding: 15px 30px;
   background: white;
-  color: #d32f2f;
+  color: #FFC107;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
@@ -362,59 +226,6 @@
   margin-top: 20px;
 }
 
-/* Comparison Section */
-.comparison {
-  padding: 60px 50px;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.comparison h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  color: #1a1a1a;
-  margin-bottom: 50px;
-}
-
-.comparison-table {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  display: grid;
-}
-
-.comparison-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  border-bottom: 1px solid #eee;
-}
-
-.comparison-row:last-child {
-  border-bottom: none;
-}
-
-.comparison-cell {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.comparison-cell.header {
-  background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
-  color: white;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.comparison-row:nth-child(even) .comparison-cell:not(.header) {
-  background-color: #f9f9f9;
-}
-
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .hero {
     padding: 40px 20px;
@@ -424,52 +235,24 @@
     font-size: 2rem;
   }
 
-  .hero p {
-    font-size: 1rem;
-  }
-
   .download-main {
     grid-template-columns: 1fr;
     padding: 40px 20px;
     gap: 30px;
   }
 
-  .download-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .download-buttons {
-    flex-direction: column;
-  }
-
-  .download-btn {
-    min-width: auto;
-  }
-
-  .app-mockup {
-    font-size: 6rem;
-  }
-
   .app-features-section,
-  .requirements,
-  .screenshots,
-  .faq,
-  .comparison {
+  .requirements {
     padding: 40px 20px;
   }
 
   .app-features-section h2,
-  .requirements h2,
-  .screenshots h2,
-  .faq h2,
-  .comparison h2 {
+  .requirements h2 {
     font-size: 1.8rem;
   }
 
   .features-grid,
-  .requirements-grid,
-  .screenshots-grid,
-  .faq-grid {
+  .requirements-grid {
     grid-template-columns: 1fr;
   }
 
@@ -488,25 +271,5 @@
   .final-btn {
     width: 100%;
     justify-content: center;
-  }
-
-  .comparison-row {
-    grid-template-columns: 1fr;
-  }
-
-  .comparison-cell {
-    padding: 15px;
-    border-bottom: 1px solid #eee;
-    justify-content: flex-start;
-  }
-
-  .comparison-cell.header {
-    display: none;
-  }
-
-  .comparison-row:nth-child(2) .comparison-cell:nth-child(1)::before {
-    content: 'Feature: ';
-    font-weight: bold;
-    margin-right: 10px;
   }
 }
