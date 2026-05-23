@@ -1,8 +1,11 @@
+
 .about {
   width: 100%;
 }
 
-/* About Hero */
+/* ===========================
+   ABOUT HERO SECTION
+   =========================== */
 .about-hero {
   background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
   color: white;
@@ -13,6 +16,7 @@
 .about-hero h1 {
   font-size: 3rem;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .about-hero p {
@@ -20,19 +24,24 @@
   opacity: 0.95;
 }
 
-/* Company Story */
+/* ===========================
+   COMPANY STORY SECTION
+   =========================== */
 .company-story {
   padding: 60px 50px;
   background-color: white;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .company-story h2 {
   font-size: 2.2rem;
   color: #1a1a1a;
   margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .story-content {
@@ -47,6 +56,7 @@
   line-height: 1.8;
   color: #666;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .story-image {
@@ -54,20 +64,22 @@
   text-align: center;
 }
 
-/* Mission Vision Values */
+/* ===========================
+   MISSION, VISION, VALUES
+   =========================== */
 .mission-vision {
   background-color: #f8f8f8;
   padding: 60px 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.mission-card,
-.vision-card,
-.values-card {
+.mission-card {
   background: white;
   padding: 30px;
   border-radius: 12px;
@@ -75,45 +87,45 @@
   border-top: 4px solid #FFC107;
   transition: all 0.3s ease;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.mission-card:hover,
-.vision-card:hover,
-.values-card:hover {
+.mission-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 25px rgba(255, 193, 7, 0.2);
 }
 
-.mission-card h3,
-.vision-card h3,
-.values-card h3 {
+.mission-card h3 {
   color: #1a1a1a;
   font-size: 1.3rem;
   margin-bottom: 15px;
   margin-top: 15px;
+  font-weight: 600;
 }
 
-.mission-card svg,
-.vision-card svg,
-.values-card svg {
+.mission-card svg {
   font-size: 2.5rem;
   color: #FFC107;
   margin-bottom: 10px;
 }
 
-.mission-card p,
-.vision-card p,
-.values-card p {
+.mission-card p {
   color: #666;
   line-height: 1.7;
+  font-size: 0.95rem;
 }
 
-/* Services */
+/* ===========================
+   SERVICES SECTION
+   =========================== */
 .services {
   padding: 60px 50px;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .services h2 {
@@ -121,6 +133,7 @@
   font-size: 2.2rem;
   color: #1a1a1a;
   margin-bottom: 50px;
+  font-weight: 700;
 }
 
 .services-grid {
@@ -137,6 +150,9 @@
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-card:hover {
@@ -155,107 +171,18 @@
   color: #1a1a1a;
   font-size: 1.2rem;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .service-card p {
   color: #666;
   line-height: 1.6;
+  font-size: 0.95rem;
 }
 
-.service-item {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-}
-
-.service-item:hover {
-  border-color: #FFC107;
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.2);
-}
-
-.service-icon {
-  font-size: 3rem;
-  display: block;
-  margin-bottom: 15px;
-}
-
-.service-item h3 {
-  color: #1a1a1a;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.service-item p {
-  color: #666;
-  line-height: 1.6;
-}
-
-/* Why Choose Us */
-.why-choose-us {
-  background-color: #f8f8f8;
-  padding: 60px 50px;
-}
-
-.why-choose-us h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  color: #1a1a1a;
-  margin-bottom: 50px;
-}
-
-.reasons-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.reason-card {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.reason-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.reason-number {
-  width: 50px;
-  height: 50px;
-  background-color: #FFC107;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0 auto 15px;
-}
-
-.reason-card h4 {
-  color: #1a1a1a;
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.reason-card p {
-  color: #666;
-  line-height: 1.6;
-}
-
-/* Statistics */
+/* ===========================
+   STATISTICS SECTION
+   =========================== */
 .statistics {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   color: white;
@@ -266,13 +193,14 @@
 .statistics h2 {
   font-size: 2.2rem;
   margin-bottom: 50px;
+  font-weight: 700;
 }
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -295,36 +223,32 @@
   font-size: 2.5rem;
   color: #FFC107;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .stat-card p {
   font-size: 1.1rem;
   color: #666;
+  margin: 0;
 }
 
-/* Team */
+/* ===========================
+   TEAM SECTION
+   =========================== */
 .team {
   padding: 60px 50px;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .team h2 {
   text-align: center;
   font-size: 2.2rem;
   color: #1a1a1a;
-  margin-bottom: 15px;
-}
-
-.team-intro {
-  text-align: center;
-  color: #666;
-  font-size: 1.1rem;
   margin-bottom: 50px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-weight: 700;
 }
 
 .team-grid {
@@ -340,6 +264,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: all 0.3s ease;
+  border-top: 3px solid #FFC107;
 }
 
 .team-member:hover {
@@ -352,73 +277,29 @@
   margin-bottom: 15px;
 }
 
-.team-member h4 {
-  color: #FFC107;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.team-member p {
-  color: #666;
-  line-height: 1.6;
-}
-
-/* Statistics */
-.statistics {
-  padding: 60px 50px;
-  background-color: #f8f8f8;
-  width: 100%;
-}
-
-.statistics h2 {
-  text-align: center;
-  font-size: 2.2rem;
+.team-member h3 {
   color: #1a1a1a;
-  margin-bottom: 50px;
+  font-size: 1.2rem;
+  margin: 15px 0 10px 0;
+  font-weight: 600;
 }
 
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.stat-card {
-  background: white;
-  padding: 40px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border-top: 4px solid #FFC107;
-  transition: all 0.3s ease;
-}
-
-.stat-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.2);
-}
-
-.stat-card h3 {
-  font-size: 2.5rem;
+.member-role {
   color: #FFC107;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.stat-card p {
-  color: #666;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
   margin: 0;
 }
 
-/* Why Choose */
+/* ===========================
+   WHY CHOOSE SECTION
+   =========================== */
 .why-choose {
   padding: 60px 50px;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .why-choose h2 {
@@ -426,6 +307,7 @@
   font-size: 2.2rem;
   color: #1a1a1a;
   margin-bottom: 50px;
+  font-weight: 700;
 }
 
 .reasons-grid {
@@ -441,11 +323,13 @@
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .reason-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: #FFC107;
 }
 
 .reason-number {
@@ -466,14 +350,18 @@
   color: #1a1a1a;
   font-size: 1.1rem;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .reason-card p {
   color: #666;
   line-height: 1.6;
+  font-size: 0.95rem;
 }
 
-/* Responsive Design */
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
 @media screen and (max-width: 768px) {
   .about-hero {
     padding: 40px 20px;
@@ -487,50 +375,109 @@
     font-size: 1rem;
   }
 
-  .company-overview,
-  .mission-vision {
-    grid-template-columns: 1fr;
-    padding: 40px 20px;
-    gap: 30px;
-  }
-
-  .overview-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .services,
-  .company-overview,
   .company-story,
   .mission-vision,
   .services,
-  .why-choose,
   .statistics,
-  .team {
-    grid-template-columns: 1fr;
+  .team,
+  .why-choose {
     padding: 40px 20px;
-    gap: 30px;
+  }
+
+  .company-story h2,
+  .services h2,
+  .statistics h2,
+  .team h2,
+  .why-choose h2 {
+    font-size: 1.8rem;
   }
 
   .story-content {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .services h2,
-  .why-choose h2,
-  .statistics h2,
-  .team h2 {
-    font-size: 1.8rem;
-  }
-
-  .overview-image,
   .story-image {
     font-size: 6rem;
   }
 
+  .mission-vision,
   .services-grid,
-  .reasons-grid,
   .stats-grid,
-  .team-grid {
+  .team-grid,
+  .reasons-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-hero {
+    padding: 30px 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-hero p {
+    font-size: 0.9rem;
+  }
+
+  .company-story,
+  .mission-vision,
+  .services,
+  .statistics,
+  .team,
+  .why-choose {
+    padding: 30px 15px;
+  }
+
+  .company-story h2,
+  .services h2,
+  .statistics h2,
+  .team h2,
+  .why-choose h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .story-content {
+    gap: 20px;
+  }
+
+  .story-text p {
+    font-size: 0.95rem;
+  }
+
+  .story-image {
+    font-size: 5rem;
+  }
+
+  .mission-card h3,
+  .service-card h3,
+  .reason-card h3 {
+    font-size: 1rem;
+  }
+
+  .service-emoji {
+    font-size: 2.5rem;
+  }
+
+  .stat-card h3 {
+    font-size: 2rem;
+  }
+
+  .member-avatar {
+    font-size: 3rem;
+  }
+
+  .team-member h3 {
+    font-size: 1rem;
+  }
+
+  .reason-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
   }
 }

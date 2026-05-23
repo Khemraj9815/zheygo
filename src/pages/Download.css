@@ -469,49 +469,177 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero {
+  .download-hero {
     padding: 40px 20px;
   }
 
-  .hero h1 {
+  .download-hero h1 {
     font-size: 2rem;
   }
 
-  .download-main {
-    grid-template-columns: 1fr;
-    padding: 40px 20px;
-    gap: 30px;
+  .download-hero p {
+    font-size: 1rem;
   }
 
-  .app-features-section,
-  .requirements {
+  .download-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .download-features,
+  .system-requirements,
+  .comparison,
+  .screenshots,
+  .download-faq,
+  .download-cta {
     padding: 40px 20px;
   }
 
-  .app-features-section h2,
-  .requirements h2 {
+  .download-features h2,
+  .system-requirements h2,
+  .comparison h2,
+  .screenshots h2,
+  .download-faq h2,
+  .download-cta h2 {
     font-size: 1.8rem;
   }
 
   .features-grid,
-  .requirements-grid {
+  .requirements-grid,
+  .screenshots-grid {
     grid-template-columns: 1fr;
   }
 
-  .cta-final {
-    padding: 40px 20px;
+  .comparison-table {
+    font-size: 0.85rem;
   }
 
-  .cta-final h2 {
+  .comparison-table th,
+  .comparison-table td {
+    padding: 12px;
+  }
+
+  .download-cta h2 {
     font-size: 1.8rem;
   }
 
-  .final-buttons {
+  .cta-buttons {
     flex-direction: column;
   }
 
-  .final-btn {
+  .cta-buttons .btn {
     width: 100%;
-    justify-content: center;
+  }
+
+  .faq-question {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .screenshot-placeholder {
+    min-height: 180px;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .download-hero {
+    padding: 30px 15px;
+  }
+
+  .download-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .download-hero p {
+    font-size: 0.9rem;
+  }
+
+  .download-buttons {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .download-features,
+  .system-requirements,
+  .comparison,
+  .screenshots,
+  .download-faq,
+  .download-cta {
+    padding: 30px 15px;
+  }
+
+  .download-features h2,
+  .system-requirements h2,
+  .comparison h2,
+  .screenshots h2,
+  .download-faq h2,
+  .download-cta h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .feature-emoji {
+    font-size: 2rem;
+  }
+
+  .req-icon {
+    font-size: 2rem;
+  }
+
+  .comparison-table table {
+    font-size: 0.8rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px;
+  }
+
+  .screenshots-grid {
+    gap: 15px;
+  }
+
+  .screenshot-placeholder {
+    min-height: 150px;
+    font-size: 2rem;
+    padding: 30px 10px;
+  }
+
+  .faq-question {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .faq-answer {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+
+  .download-cta h2 {
+    font-size: 1.3rem;
+  }
+
+  .download-cta p {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .cta-buttons {
+    gap: 10px;
   }
 }
