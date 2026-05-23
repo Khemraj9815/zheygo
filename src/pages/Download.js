@@ -68,12 +68,12 @@ function Download() {
         <h1>Download ZheyGo</h1>
         <p>Get fast food delivery right in your pocket</p>
         <div className="download-buttons">
-          <a href="#" className="btn btn-primary">
+          <button className="btn btn-primary">
             <FaApple /> Download on iOS
-          </a>
-          <a href="#" className="btn btn-primary">
+          </button>
+          <button className="btn btn-primary">
             <FaAndroid /> Get on Android
-          </a>
+          </button>
         </div>
       </section>
 
@@ -187,12 +187,12 @@ function Download() {
         <h2>Download ZheyGo Today</h2>
         <p>Join thousands of happy customers enjoying convenient food delivery</p>
         <div className="cta-buttons">
-          <a href="#" className="btn btn-primary">
+          <button className="btn btn-primary">
             <FaApple /> iOS App Store
-          </a>
-          <a href="#" className="btn btn-primary">
+          </button>
+          <button className="btn btn-primary">
             <FaAndroid /> Google Play Store
-          </a>
+          </button>
         </div>
       </section>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGraduationCap, FaHeart, FaLeaf, FaUsers, FaTruck } from 'react-icons/fa';
+import { FaGraduationCap, FaHeart, FaLeaf } from 'react-icons/fa';
 import './About.css';
 
 function About() {

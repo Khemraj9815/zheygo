@@ -6,7 +6,7 @@ function Restaurants() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCuisine, setSelectedCuisine] = useState('All');
 
-  const restaurants = [
+  const restaurants = useMemo(() => [
     { id: 1, name: 'Bhutanese Kitchen', cuisine: 'Bhutanese', rating: 4.8, reviews: 324, image: '🍛', deliveryTime: '30-40 min', minOrder: 150 },
     { id: 2, name: 'Dragon Momos', cuisine: 'Asian', rating: 4.9, reviews: 567, image: '🥟', deliveryTime: '25-35 min', minOrder: 100 },
     { id: 3, name: 'Thimphu Delights', cuisine: 'Fast Food', rating: 4.7, reviews: 412, image: '🍔', deliveryTime: '20-30 min', minOrder: 80 },
@@ -19,7 +19,7 @@ function Restaurants() {
     { id: 10, name: 'Tandoor House', cuisine: 'Indian', rating: 4.7, reviews: 401, image: '🍖', deliveryTime: '35-45 min', minOrder: 180 },
     { id: 11, name: 'Pasta Paradise', cuisine: 'Italian', rating: 4.6, reviews: 267, image: '🍝', deliveryTime: '30-40 min', minOrder: 200 },
     { id: 12, name: 'Pho Palace', cuisine: 'Vietnamese', rating: 4.8, reviews: 345, image: '🍲', deliveryTime: '25-35 min', minOrder: 110 }
-  ];
+  ], []);
 
   const cuisines = ['All', 'Bhutanese', 'Asian', 'Indian', 'Italian', 'Japanese', 'Fast Food', 'Vegetarian', 'Vietnamese'];
 
@@ -30,7 +30,7 @@ function Restaurants() {
       const matchesCuisine = selectedCuisine === 'All' || restaurant.cuisine === selectedCuisine;
       return matchesSearch && matchesCuisine;
     });
-  }, [searchTerm, selectedCuisine]);
+  }, [searchTerm, selectedCuisine, restaurants]);
 
   return (
     <div className="restaurants">
